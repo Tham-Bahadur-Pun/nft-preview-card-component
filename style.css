@@ -1,0 +1,85 @@
+   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+   *,
+   *::before,
+   *::after {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+   }
+   
+    :root {
+       /* ### Primary  */
+       --soft-blue: hsl(215, 51%, 70%);
+       --cyan: hsl(178, 100%, 50%);
+       /* ### Neutral */
+       --very-dark-main-bg: hsl(217, 54%, 11%);
+       --very-dark-card-bg: hsl(216, 50%, 16%);
+       --very-dark-line: hsl(215, 32%, 27%);
+       --white: hsl(0, 0%, 100%);
+   }
+   
+   body {
+       font-family: 'Outfit', sans-serif;
+       background-color: var(--very-dark-main-bg);
+       height: 100vh;
+   }
+   
+   p {
+       font-size: 18px;
+   }
+   
+   .container {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .second-bg,
+   .content {
+       border-radius: 15px;
+       -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+       -ms-border-radius: 15px;
+       -o-border-radius: 15px;
+       padding: 10px;
+   }
+   
+   .image-container,
+   .image-container img {
+       width: 100%;
+       border-radius: 15px;
+       -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+       -ms-border-radius: 15px;
+       -o-border-radius: 15px;
+   }
+   
+   .avatar-img {
+       width: 25px;
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       border: 2px solid white;
+   }
+   
+   .second-bg {
+       width: 25%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .content {
+       background-color: var(--very-dark-card-bg);
+   }
+   
+   .attribution {
+       font-size: 11px;
+       text-align: center;
+   }
+   
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+   }
