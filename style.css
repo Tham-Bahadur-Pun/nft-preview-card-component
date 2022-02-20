@@ -13,7 +13,7 @@
        --cyan: hsl(178, 100%, 50%);
        /* ### Neutral */
        --very-dark-main-bg: hsl(217, 54%, 11%);
-       --very-dark-card-bg: hsl(216, 50%, 16%);
+       --very-dark-card-bg: #14253d;
        --very-dark-line: hsl(215, 32%, 27%);
        --white: hsl(0, 0%, 100%);
    }
@@ -28,30 +28,43 @@
        font-size: 18px;
    }
    
-   .container {
+   main {
        width: 100%;
+       display: flex;
        justify-content: center;
        align-items: center;
+       height: 100vh;
+       flex-direction: column;
    }
    
-   .second-bg,
+   .container {
+       width: 300px;
+   }
+   
    .content {
-       border-radius: 15px;
-       -webkit-border-radius: 15px;
-       -moz-border-radius: 15px;
-       -ms-border-radius: 15px;
-       -o-border-radius: 15px;
-       padding: 10px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       padding: 20px;
+       -webkit-box-shadow: 0 6.5px 0 3px #14253d;
+       -moz-box-shadow: 0 6.5px 0 3px #14253d;
+       box-shadow: 0 6.5px 0 3px #14253d;
+   }
+   
+   .content div:nth-child(2) {
+       padding: 10px 0;
    }
    
    .image-container,
    .image-container img {
        width: 100%;
-       border-radius: 15px;
-       -webkit-border-radius: 15px;
-       -moz-border-radius: 15px;
-       -ms-border-radius: 15px;
-       -o-border-radius: 15px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
    }
    
    .avatar-img {
@@ -64,20 +77,67 @@
        border: 2px solid white;
    }
    
-   .second-bg {
-       width: 25%;
+   .content {
+       background-color: var(--very-dark-card-bg);
+   }
+   
+   .inner-content {
        display: flex;
-       justify-content: center;
+       justify-content: space-between;
+   }
+   
+   .inner-content>div,
+   .horizontal-line+div {
+       display: flex;
        align-items: center;
    }
    
-   .content {
-       background-color: var(--very-dark-card-bg);
+   img+p {
+       color: var(--soft-blue);
+       font-size: 13px;
+       padding-left: 10px;
+   }
+   
+   .eth-value {
+       color: var(--cyan);
+   }
+   
+   .creator,
+   .heading {
+       color: var(--white);
+   }
+   
+   .heading {
+       font-weight: 600;
+       padding-bottom: 10px;
+   }
+   
+   .heading:hover {
+       color: var(--cyan);
+       cursor: pointer;
+   }
+   
+   .heading+p {
+       color: var(--soft-blue);
+       font-weight: 300;
+       font-size: 15px;
+       padding: 10px 0;
+   }
+   
+   .horizontal-line {
+       margin-bottom: 15px;
+       margin-top: 10px;
+       border-color: var(--very-dark-line);
+   }
+   
+   footer {
+       padding-top: 10px;
    }
    
    .attribution {
        font-size: 11px;
        text-align: center;
+       color: white;
    }
    
    .attribution a {
