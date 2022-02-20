@@ -10,7 +10,7 @@
     :root {
        /* ### Primary  */
        --soft-blue: hsl(215, 51%, 70%);
-       --cyan: hsl(178, 100%, 50%);
+       --cyan: rgb(0, 255, 247);
        /* ### Neutral */
        --very-dark-main-bg: hsl(217, 54%, 11%);
        --very-dark-card-bg: #14253d;
@@ -47,7 +47,7 @@
        -moz-border-radius: 10px;
        -ms-border-radius: 10px;
        -o-border-radius: 10px;
-       padding: 20px;
+       padding: 16px;
        -webkit-box-shadow: 0 6.5px 0 3px #14253d;
        -moz-box-shadow: 0 6.5px 0 3px #14253d;
        box-shadow: 0 6.5px 0 3px #14253d;
@@ -58,13 +58,39 @@
    }
    
    .image-container,
-   .image-container img {
+   .main-image {
        width: 100%;
+       height: 100%;
        border-radius: 10px;
        -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
        -ms-border-radius: 10px;
        -o-border-radius: 10px;
+       position: relative;
+   }
+   
+   .view-icon {
+       position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 100%;
+       opacity: 0;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+   }
+   
+   .view-icon:hover {
+       background-color: rgba(0, 255, 247, 0.5);
+       opacity: 1;
+       cursor: pointer;
    }
    
    .avatar-img {
